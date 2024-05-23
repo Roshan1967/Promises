@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="https://via.placeholder.com/800x400?text=Slide+1" style="width:100%">
+        </div>
+        <div class="slides fade">
+            <img src="https://via.placeholder.com/800x400?text=Slide+2" style="width:100%">
+        </div>
+        <div class="slides fade">
+            <img src="https://via.placeholder.com/800x400?text=Slide+3" style="width:100%">
+        </div>
+        <!-- Add more slides up to Slide 20 -->
+        <div class="slides fade">
+            <img src="https://via.placeholder.com/800x400?text=Slide+20" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <button id="toggleSlideshow" onclick="toggleSlideshow()">Stop Slideshow</button>
+    </div>
+
+    <script src="test1.js"></script>
+</body>
+</html>
